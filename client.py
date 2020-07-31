@@ -4,7 +4,7 @@ URL = "http://127.0.0.1:8000"
 
 def get_token():
 	url = "http://127.0.0.1:8000/api/auth/"
-	response = requests.post(url, data={'username': 'root','password': 'root'})
+	response = requests.post(url, data={'username': 'DJANGO_ADMIN_USERNAME','password': 'DJANGO_ADMIN_PASSWORD'})
 	# print(response.json())
 	return response.json()
 
